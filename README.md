@@ -1,35 +1,43 @@
 # sales-commission-edited
-#Name: Oluwakemi LaBadie
-#Student ID Number: 00002489343
-#Write a program that solves ' Acme auto pays sales persons 3.5% commission on their sales.
-#Assign the value to properly named constant. Sasha sold three cars. Write a program that
+#Write a program that solves ' Acme auto pays sales persons 3.5% commission on their sales
+#assign the value to properly named constant. Sasha sold three cars. Write a program that
 #prompts for the selling prices of the three cars and calculates her total sales and commission
 
-#
 #Pseudocode
 #start Program
 #
-#prompt user for cost of 3 cars, assign to variable 'car_sales'
-#prompt user for commission rate, assign to variable 'comm_rate'
-#calculate pay = sales * comm_rate 
-#output the total sales
-#end of program
+#prompt user for cost of each car, assign to variable (car_pri1, car_pri2, car_pri3).
+#Calculate the total cost of the 3 cars, assign to variable total_car.
+#Ehter the commission rate, assign to variable comm_rate.
+#calculate pay = sales * comm_rate.
+#Output the total cost of the three cars.
+#output the total sales commission on the three cars.
+#end of program.
+
+
 
 #start program
 
 
-#Prompt user for cost of three cars
-car_sale = float(input('Enter cost of three cars:'))
-print(f'The cost of three cars is: ${car_sale:,.2f}.')
+#Prompt user for cost of each car
+car_pri1 = float(input('Enter cost of first car'))
+car_pri2 = float(input('Enter cost of second car'))
+car_pri3 = float(input('Enter cost of third car'))
 
+#Calculate the total cost of 3 cars
+total_car = car_pri1 + car_pri2 + car_pri3
+    
 #Enter commission rate
 comm_rate = 0.035
+
     
 #calculate pay
-pay = car_sale * comm_rate
+pay = total_car * comm_rate
     
-#output the total sales for three cars
-print(f'The total sales commission on the three cars is: ${pay:,.2f}.')
+#output the pay-out on the sale of the three cars
+print(f'The total cost of the three cars is:${total_car:,.2f}.')
+print(f'The Sales Commission on the three cars is: ${pay:,.2f}.')
 
-#End of program
+    
+#End of Program 
     
